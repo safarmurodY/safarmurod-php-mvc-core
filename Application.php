@@ -18,7 +18,6 @@ class Application
     public Session $session;
     public ?UserModel $user;
     public View $view;
-
     public static Application $app;
     public static string $ROOT_DIR;
     public ?Controller $controller = null;
