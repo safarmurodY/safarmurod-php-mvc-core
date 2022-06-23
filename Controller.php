@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Safarmurod\PhpMvcCore;
 
-use app\core\middlewares\BaseMiddleware;
+use Safarmurod\PhpMvcCore\middlewares\BaseMiddleware;
 
 class Controller
 {

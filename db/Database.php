@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\db;
+namespace Safarmurod\PhpMvcCore\db;
 
-use app\core\Application;
+use Safarmurod\PhpMvcCore\Application;
 use PDO;
 
 class Database

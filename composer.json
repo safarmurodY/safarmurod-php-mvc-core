@@ -2,7 +2,7 @@
     "name": "safarmurod/php-mvc-core",
     "autoload": {
         "psr-4": {
-            "Safarmurod\\PhpMvcCore\\": "src/"
+            "Safarmurod\\PhpMvcCore\\": "."
         }
     },
     "authors": [

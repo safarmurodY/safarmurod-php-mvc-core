@@ -1,10 +1,10 @@
 <?php
 
-namespace app\core;
+namespace Safarmurod\PhpMvcCore;
 
 
-use app\core\db\Database;
-use app\core\db\DbModel;
+use Safarmurod\PhpMvcCore\db\Database;
+use Safarmurod\PhpMvcCore\db\DbModel;
 
 class Application
 {

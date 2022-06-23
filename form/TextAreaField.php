@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\form;
+namespace Safarmurod\PhpMvcCore\form;
 
 class TextAreaField extends BaseField
 {

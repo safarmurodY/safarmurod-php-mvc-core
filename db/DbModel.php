@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace Safarmurod\PhpMvcCore\db;
 
-use app\core\Application;
-use app\core\Model;
+use Safarmurod\PhpMvcCore\Application;
+use Safarmurod\PhpMvcCore\Model;
 
 abstract class DbModel extends Model
 {

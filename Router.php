@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace Safarmurod\PhpMvcCore;
 
-use app\core\exception\NotFoundException;
+use Safarmurod\PhpMvcCore\exception\NotFoundException;
 
 class Router
 {
