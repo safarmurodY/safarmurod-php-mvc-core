@@ -1,0 +1,15 @@
+{
+    "name": "safarmurod/php-mvc-core",
+    "autoload": {
+        "psr-4": {
+            "Safarmurod\\PhpMvcCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cube",
+            "email": "safarmurod20014@gmail.com"
+        }
+    ],
+    "require": {}
+}
