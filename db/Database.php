@@ -29,7 +29,7 @@ class Database
         $newMigrations = [];
         foreach ($toApply as $migration) {
 
-            if ($migration === '.' || $migration === '..'){
+            if ($migration === '.' || $migration === '..') {
                 continue;
             }
             require_once Application::$ROOT_DIR . '/migrations/' . $migration;
@@ -41,9 +41,9 @@ class Database
             $newMigrations[] = $migration;
             $this->log("Applied $migration");
         }
-        if (!empty($newMigrations)){
+        if (!empty($newMigrations)) {
             $this->saveMigrations($newMigrations);
-        }else{
+        } else {
             $this->log("All migrations applied");
         }
     }

@@ -1,4 +1,5 @@
 <?php
+
 namespace app\core;
 
 
@@ -35,10 +36,10 @@ class Application
         $this->view = new View();
 
         $primaryValue = $this->session->get('user');
-        if ($primaryValue){
+        if ($primaryValue) {
             $primaryKey = (new $this->userClass())->primaryKey();
             $this->user = $this->userClass::findOne([$primaryKey => $primaryValue]);
-        }else{
+        } else {
             $this->user = null;
         }
     }
@@ -52,7 +53,7 @@ class Application
     {
         try {
             echo $this->router->resolve();
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             $this->response->setStatusCode($e->getCode());
             echo $this->view->renderView('error', [
                 'exception' => $e

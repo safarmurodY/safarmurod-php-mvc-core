@@ -72,7 +72,6 @@ abstract class Model
                     if ($record){
                         $this->addErrorForRule($attribute, self::RULE_UNIQUE, ['field' => $this->getLabel($attribute)]);
                     }
-
                 }
             }
         }

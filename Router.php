@@ -25,6 +25,7 @@ class Router
     {
         $this->routes['get'][$path] = $callback;
     }
+
     public function post($path, $callback)
     {
         $this->routes['post'][$path] = $callback;
@@ -36,11 +37,11 @@ class Router
         $method = $this->request->method();
 
         $callback = $this->routes[$method][$path] ?? false;
-        if (!$callback){
+        if (!$callback) {
             $this->response->setStatusCode(404);
             throw new NotFoundException();
         }
-        if (is_array($callback)){
+        if (is_array($callback)) {
             /** @var Controller $controller */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;
@@ -51,7 +52,7 @@ class Router
             }
         }
 
-        if (is_string($callback)){
+        if (is_string($callback)) {
             return Application::$app->view->renderView($callback);
         }
         return call_user_func($callback, $this->request, $this->response);

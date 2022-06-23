@@ -14,6 +14,7 @@ abstract class BaseField
         $this->model = $model;
         $this->attribute = $attribute;
     }
+
     abstract public function renderInput(): string;
 
     public function __toString()
